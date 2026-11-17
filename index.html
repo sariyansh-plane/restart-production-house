@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RESTART PRODUCTION HOUSE - Music recording, song production and cinematic music video production.">
+
+  <title>RESTART PRODUCTION HOUSE</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Leaflet Map CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <img src="public/images/restart-logo.png" alt="RESTART">
+    <p>LOADING EXPERIENCE</p>
+  </div>
+
+  <!-- HEADER -->
+  <header class="navbar" id="navbar">
+
+    <a href="#home" class="brand">
+      <img src="public/images/restart-logo.png" alt="RESTART Logo">
+      <h2 class="brand-title"><span>RESTART</span> PRODUCTION HOUSE</h2>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#songs">Song Production</a>
+      <a href="#videos">Video Production</a>
+      <a href="#portfolio">Our Work</a>
+      <a href="#studio">Find Studio</a>
+      <a href="#contact">Contact</a>
+      <a href="#booking" class="nav-book">BOOK NOW ↗</a>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content reveal">
+
+        <span class="eyebrow">WELCOME TO RESTART PRODUCTION HOUSE</span>
+
+        <h1>
+          YOUR MUSIC.<br>
+          <span>YOUR IDENTITY.</span>
+        </h1>
+
+        <p>
+          From your first recording to a complete cinematic music video,
+          bring your creative vision to life with RESTART.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#booking" class="btn btn-gold">
+            START YOUR PROJECT ↗
+          </a>
+
+          <a href="#portfolio" class="btn btn-outline">
+            EXPLORE OUR WORK
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="pulse"></span>
+          MUSIC PRODUCTION • VIDEO PRODUCTION • CREATIVE STUDIO
+        </div>
+
+      </div>
+
+      <div class="hero-photo reveal">
+
+        <img
+          src="public/images/singer-recording.jpg"
+          alt="Singer recording at RESTART Production House"
+        >
+
+        <div class="photo-caption">
+          <span>CREATE SOMETHING ORIGINAL</span>
+          <strong>THE SOUND OF RESTART</strong>
+        </div>
+
+      </div>
+
+      <div class="hero-bottom">SCROLL TO EXPLORE ↓</div>
+      <div class="hero-number">01 / 05</div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+
+      <div class="section-label reveal">
+        01 — WHO WE ARE
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-heading reveal">
+
+          <span class="eyebrow">MORE THAN JUST A STUDIO</span>
+
+          <h2>
+            YOUR VISION.<br>
+            OUR <span>CREATION.</span>
+          </h2>
+
+        </div>
+
+        <div class="about-right reveal">
+
+          <div class="team-photos">
+
+            <div class="team-photo">
+              <img
+                src="public/images/team-1.jpg"
+                alt="RESTART Production House Team Member 1"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="team-photo">
+              <img
+                src="public/images/team-2.jpg"
+                alt="RESTART Production House Team Member 2"
+                loading="lazy"
+              >
+            </div>
+
+          </div>
+
+          <div class="about-text">
+
+            <p>
+              RESTART PRODUCTION HOUSE is a creative production house where sound meets visuals.
+              We help artists turn their ideas into professionally produced
+              songs and memorable music videos.
+            </p>
+
+            <p>
+              Whether you need a recording session, a complete song,
+              or a music video, your creative journey starts here.
+            </p>
+
+            <a href="#booking" class="text-link">
+              LET'S CREATE TOGETHER ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SONG PRODUCTION -->
+    <section class="services section" id="songs">
+
+      <div class="section-label reveal">
+        02 — OUR SERVICES
+      </div>
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="eyebrow">MAKE YOUR SOUND</span>
+          <h2>SONG <span>PRODUCTION</span></h2>
+        </div>
+
+        <p>
+          Everything your music needs, from recording to its final sound.
+        </p>
+
+      </div>
+
+      <div class="service-grid">
+
+        <article class="service-card reveal">
+          <span class="card-number">01</span>
+          <div class="service-icon">♫</div>
+          <h3>Studio Recording</h3>
+          <p>Professional vocal recording in a creative studio environment.</p>
+          <div class="price">Pricing on request</div>
+          <a href="#booking" class="text-link">BOOK RECORDING ↗</a>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="card-number">02</span>
+          <div class="service-icon">♪</div>
+          <h3>Music Production</h3>
+          <p>Bring your musical ideas to life with original production.</p>
+          <div class="price">Pricing on request</div>
+          <a href="#booking" class="text-link">BOOK PRODUCTION ↗</a>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="card-number">03</span>
+          <div class="service-icon">◉</div>
+          <h3>Mixing & Mastering</h3>
+          <p>Give your track a polished and professional final sound.</p>
+          <div class="price">Pricing on request</div>
+          <a href="#booking" class="text-link">BOOK MIXING ↗</a>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- VIDEO PRODUCTION -->
+    <section class="video-section section" id="videos">
+
+      <div class="section-label reveal">
+        03 — VISUAL PRODUCTION
+      </div>
+
+      <div class="video-layout">
+
+        <div class="video-copy reveal">
+
+          <span class="eyebrow">TURN SOUND INTO VISUALS</span>
+
+          <h2>
+            MUSIC VIDEO<br>
+            <span>PRODUCTION</span>
+          </h2>
+
+          <p>
+            Your song deserves a visual story. Create cinematic music videos
+            with professional shooting and editing.
+          </p>
+
+          <a href="#booking" class="btn btn-gold">
+            BOOK A VIDEO SHOOT ↗
+          </a>
+
+        </div>
+
+        <div class="video-cards">
+
+          <article class="video-card reveal">
+            <span>01</span>
+            <h3>Music Video Shooting</h3>
+            <p>Professional video shoots for your songs.</p>
+            <strong>Pricing on request</strong>
+          </article>
+
+          <article class="video-card reveal">
+            <span>02</span>
+            <h3>Cinematography</h3>
+            <p>Creative visuals and cinematic camera work.</p>
+            <strong>Pricing on request</strong>
+          </article>
+
+          <article class="video-card reveal">
+            <span>03</span>
+            <h3>Video Editing</h3>
+            <p>Professional editing and final video delivery.</p>
+            <strong>Pricing on request</strong>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio section" id="portfolio">
+
+      <div class="section-label reveal">
+        04 — OUR CREATIVE WORLD
+      </div>
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="eyebrow">MADE WITH PASSION</span>
+          <h2>OUR <span>WORK</span></h2>
+        </div>
+
+        <p>
+          A space to showcase our music productions and video creations.
+        </p>
+
+      </div>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-item reveal">
+          <img src="public/images/work-1.jpg" alt="Music Video Production" loading="lazy">
+          <div class="portfolio-info">
+            <span>01 — MUSIC VIDEO</span>
+            <h3>Music Video Production</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal">
+          <img src="public/images/work-2.jpg" alt="Studio Recording" loading="lazy">
+          <div class="portfolio-info">
+            <span>02 — STUDIO SESSION</span>
+            <h3>Studio Recording</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal">
+          <img src="public/images/work-3.jpg" alt="Visual Production" loading="lazy">
+          <div class="portfolio-info">
+            <span>03 — VISUAL PRODUCTION</span>
+            <h3>Visual Production</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FIND OUR STUDIO -->
+    <section class="studio-section section" id="studio">
+
+      <div class="section-label reveal">
+        05 — FIND OUR STUDIO
+      </div>
+
+      <div class="studio-heading reveal">
+
+        <div>
+          <span class="eyebrow">COME CREATE WITH US</span>
+          <h2>VISIT <span>RESTART.</span></h2>
+        </div>
+
+        <p>
+          Your next creative journey starts here.
+          Find our studio location on the map.
+        </p>
+
+      </div>
+
+      <div class="studio-map-wrapper reveal">
+
+        <div class="studio-map-top">
+          <div>
+            <span class="map-status-dot"></span>
+            <span>OUR STUDIO LOCATION</span>
+          </div>
+
+          <span class="map-coordinate-label">PANIPAT, HARYANA</span>
+        </div>
+
+        <div class="studio-map-frame">
+          <div id="studioMap" aria-label="Map showing RESTART Production House studio location"></div>
+
+          <div class="map-zoom-overlay" id="mapZoomOverlay">
+            <span>LOCATING STUDIO</span>
+          </div>
+        </div>
+
+        <div class="studio-map-bottom">
+
+          <div class="studio-location-info">
+            <span class="eyebrow">RESTART PRODUCTION HOUSE</span>
+            <h3>COME VISIT OUR STUDIO.</h3>
+            <p>Panipat, Haryana, India</p>
+          </div>
+
+          <a
+            class="btn btn-gold"
+            href="https://www.google.com/maps?q=29.403403123783523,76.9937612137467"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GET DIRECTIONS ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BOOKING SECTION -->
+    <section class="booking section" id="booking">
+
+      <div class="section-label reveal">
+        06 — START YOUR JOURNEY
+      </div>
+
+      <div class="booking-grid">
+
+        <div class="booking-copy reveal">
+
+          <span class="eyebrow">LET'S MAKE IT HAPPEN</span>
+
+          <h2>
+            YOUR NEXT<br>
+            <span>PROJECT STARTS</span><br>
+            HERE.
+          </h2>
+
+          <p>
+            Tell us what you want to create.
+            Our team will connect with you.
+          </p>
+
+        </div>
+
+        <form class="booking-form reveal" id="bookingForm">
+
+          <h3>BOOK YOUR PROJECT</h3>
+
+          <label for="customerName">Your Name</label>
+          <input type="text" id="customerName" placeholder="Enter your name" required>
+
+          <label for="customerPhone">Phone Number</label>
+          <input type="tel" id="customerPhone" placeholder="Enter your phone number" required>
+
+          <label for="customerService">Select Your Service</label>
+
+          <select id="customerService" required>
+            <option value="">Choose a service</option>
+            <option>Studio Recording</option>
+            <option>Music Production</option>
+            <option>Mixing & Mastering</option>
+            <option>Music Video Shooting</option>
+            <option>Cinematography</option>
+            <option>Video Editing</option>
+            <option>Song + Music Video Package</option>
+            <option>Other Enquiry</option>
+          </select>
+
+          <label for="customerMessage">Project Details</label>
+          <textarea id="customerMessage" rows="4" placeholder="Tell us about your project..."></textarea>
+
+          <button type="submit" class="btn btn-gold form-button">
+            SEND BOOKING REQUEST ↗
+          </button>
+
+          <p class="form-note">
+            Your request will open in WhatsApp for confirmation.
+          </p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div class="contact-content reveal">
+
+        <span class="eyebrow">HAVE A PROJECT IN MIND?</span>
+
+        <h2>
+          LET'S MAKE<br>
+          <span>SOME NOISE.</span>
+        </h2>
+
+        <p>
+          Get in touch with RESTART PRODUCTION HOUSE.
+        </p>
+
+        <a href="#booking" class="btn btn-gold">
+          CONTACT OUR STUDIO ↗
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-brand">
+
+      <img src="public/images/restart-logo.png" alt="RESTART Logo">
+
+      <span>RESTART PRODUCTION HOUSE</span>
+
+    </div>
+
+    <p>
+      © <span id="year"></span>
+      RESTART PRODUCTION HOUSE. ALL RIGHTS RESERVED.
+    </p>
+
+    <a href="#home">BACK TO TOP ↑</a>
+
+  </footer>
+
+
+  <!-- FLOATING BOOKING BUTTON -->
+  <a href="#booking" class="floating-book">
+    BOOK NOW ↗
+  </a>
+
+
+  <!-- Leaflet Map JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
