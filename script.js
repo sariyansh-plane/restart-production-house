@@ -1,4 +1,3 @@
-
 // ========================================
 // RESTART PRODUCTION HOUSE
 // MAIN JAVASCRIPT
@@ -301,11 +300,35 @@ if (yearElement) {
 // WHATSAPP BOOKING SYSTEM
 // ========================================
 
-// Replace with your studio WhatsApp number.
-// Example: 919876543210
+// All studio WhatsApp numbers.
+// Country code included.
 // Do not add +, spaces or dashes.
 
-const STUDIO_WHATSAPP = "91XXXXXXXXXX";
+const STUDIO_WHATSAPP_NUMBERS = [
+  "918398011392",
+  "919253297292",
+  "919253484170"
+];
+
+
+// ========================================
+// SELECT ONE RANDOM WHATSAPP NUMBER
+// ========================================
+
+function getRandomWhatsAppNumber() {
+
+  const randomIndex = Math.floor(
+    Math.random() * STUDIO_WHATSAPP_NUMBERS.length
+  );
+
+  return STUDIO_WHATSAPP_NUMBERS[randomIndex];
+
+}
+
+
+// ========================================
+// BOOKING FORM
+// ========================================
 
 const bookingForm = document.getElementById("bookingForm");
 
@@ -354,17 +377,23 @@ if (bookingForm) {
     }
 
 
-    // CHECK STUDIO WHATSAPP NUMBER
+    // CHECK STUDIO WHATSAPP NUMBERS
 
-    if (!/^[0-9]{10,15}$/.test(STUDIO_WHATSAPP)) {
+    if (
+      !STUDIO_WHATSAPP_NUMBERS.length ||
+      !STUDIO_WHATSAPP_NUMBERS.every(number => /^[0-9]{10,15}$/.test(number))
+    ) {
 
-      alert(
-        "Please add your studio WhatsApp number in script.js first."
-      );
+      alert("Studio WhatsApp numbers are not configured correctly.");
 
       return;
 
     }
+
+
+    // SELECT ONLY ONE RANDOM NUMBER
+
+    const selectedWhatsAppNumber = getRandomWhatsAppNumber();
 
 
     // WHATSAPP MESSAGE
@@ -392,7 +421,7 @@ Thank you!
 
     const whatsappURL =
       "https://wa.me/" +
-      STUDIO_WHATSAPP +
+      selectedWhatsAppNumber +
       "?text=" +
       encodeURIComponent(whatsappMessage);
 
